@@ -41,7 +41,7 @@
 
     <!--Hero-->
     <div
-      class="container flex flex-col items-center justify-center mx-auto pr-10 text-center pb-20 bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient"
+      class="flex flex-col items-center justify-center mx-auto pr-10 text-center pb-20 bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient"
     >
       <h1 class="font-Overpass font-semibold text-5xl text-white mt-3 p-3">
         A modern publishing platform
@@ -160,42 +160,9 @@
 
     <!--Tools section-->
     <section>
-      <div class="content bg-white md:w-1/2">
-        <!--paragraph1-->
-        <div>
-          <h2
-            class="p-5 font-overpass font-semibold text-2xl text-headingBlue leading-tight"
-          >
-            Free, open, simple
-          </h2>
-          <p
-            class="pt-1 px-5 text-bodyGray font-light text-base leading-relaxed tracking-wide"
-          >
-            Blogr is a free and open source application backed by a large
-            community of helpful developers. It supports features such as code
-            syntax highlighting, RSS feeds, social media integration,
-            third-party commenting tools, and works seamlessly with Google
-            Analytics. The architecture is clean and is relatively easy to
-            learn.
-          </p>
-        </div>
-        <!--Paragraph 2-->
-        <div>
-          <h2
-            class="p-5 font-overpass font-semibold text-2xl text-headingBlue leading-tight"
-          >
-            Powerful tooling
-          </h2>
-          <p
-            class="pt-1 px-5 text-bodyGray font-light text-base leading-relaxed tracking-wide"
-          >
-            Batteries included. We built a simple and straightforward CLI tool
-            that makes customization and deployment a breeze, but capable of
-            producing even the most complicated sites.
-          </p>
-        </div>
+      <div class="flex flex-col md:flex-row">
         <!--Images-->
-        <div class="bg-white flex flex-row md:flex-row md:w-1/2">
+        <div class="bg-white flex flex-row md:flex-row md:w-1/2 pt-10 pr-20">
           <!--Mobile image-->
           <img class="md:hidden" src="/images/illustration-laptop-mobile.svg" />
           <!--Desktop Image-->
@@ -204,7 +171,82 @@
             src="images/illustration-laptop-desktop.svg"
           />
         </div>
+
+        <!--Content-->
+        <div class="content bg-white md:w-1/2 text-center md:text-left pt-20">
+          <!--paragraph 1-->
+          <div>
+            <h2
+              class="p-5 font-overpass font-semibold text-2xl text-headingBlue leading-tight"
+            >
+              Free, open, simple
+            </h2>
+            <p
+              class="pt-1 px-5 text-bodyGray font-light text-base leading-relaxed tracking-wide"
+            >
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+
+          <!--paragraph 2-->
+          <div>
+            <h2
+              class="p-5 font-overpass font-semibold text-2xl text-headingBlue leading-tight"
+            >
+              Powerful tooling
+            </h2>
+            <p
+              class="pt-1 px-5 text-bodyGray font-light text-base leading-relaxed tracking-wide"
+            >
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!--Footer-->
+    <footer
+      class="text-white bg-gradient-to-r from-veryDarkBlackBlue to-footerDark flex text-center md:text-left flex-col md:flex-row p-10"
+    >
+      <img
+        class="justify-center md:justify-start md:w-1/4 pr-10"
+        src="/images/logo.svg"
+      />
+      <div class="flex flex-col md:flex-col md:w-1/4">
+        <h3
+          class="text-white flex-col flex font-overpass text-xs font-bold leading-normal tracking-wide mb-4"
+        >
+          Product
+        </h3>
+        <a class="text-xs font-bold leading-normal tracking-wide" href="#"
+          >Overview</a
+        >
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+      <div class="help flex flex-col md:flex-col md:w-1/4">
+        <h3 class="pb-7">Company</h3>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="help flex flex-col md:flex-col md:w-1/4">
+        <h3>Connect</h3>
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </footer>
   </body>
 </html>

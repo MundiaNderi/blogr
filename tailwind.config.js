@@ -25,7 +25,8 @@ module.exports = {
         bodyGray: 'hsla(209, 12%, 34%, 1)',
         hoverPink: 'hsla(355, 100%, 74%, 1)',
         darkPhone: '#2D2E40',
-        lightPhone: '#3F4164'
+        lightPhone: '#3F4164',
+        footerDark: 'hsla(237, 10%, 16%, 1)'
       },
       textColor: ['responsive', 'hover', 'focus', 'group-hover'],
       fontFamily: {
