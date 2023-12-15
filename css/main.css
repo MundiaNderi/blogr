@@ -540,34 +540,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 976px) {
-  .container {
-    max-width: 976px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
@@ -595,10 +567,6 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -689,10 +657,6 @@ video {
 
 .rounded-tr-full {
   border-top-right-radius: 9999px;
-}
-
-.rounded-tr-none {
-  border-top-right-radius: 0px;
 }
 
 .border {
@@ -787,6 +751,11 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pb-10 {
@@ -1011,6 +980,12 @@ video {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+/* Rounded Corners */
+
+.hero {
+  border-radius: 0px 0px 0px 100px;
+}
+
 .hover\:block:hover {
   display: block;
 }
@@ -1101,11 +1076,6 @@ video {
 
   .md\:justify-start {
     justify-content: flex-start;
-  }
-
-  .md\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 
   .md\:pl-10 {

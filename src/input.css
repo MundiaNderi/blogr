@@ -49,3 +49,9 @@
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+/* Rounded Corners */
+
+.hero {
+    border-radius: 0px 0px 0px 100px;
+}
