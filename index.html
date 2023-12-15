@@ -23,12 +23,15 @@
             <img src="/images/logo.svg" alt="" />
           </div>
           <!--Menu Items-->
-          <div class="hidden md:flex space-x-6 text-white">
+          <div id="menu" class="hidden md:flex space-x-10 text-white">
             <ul class="flex flex-row space-x-12">
               <li class="text-decoration-none">
-                <a id="sub-menu" class="hover:underline" href="#">Product</a>
+                <a id="product-link" class="hover:underline menu-link" href="#"
+                  >Product</a
+                >
                 <!--Product sub-menu-->
                 <div
+                  id="sub-menu"
                   class="hidden hover:block absolute sub-menu1 bg-white text-subMenu"
                 >
                   <ul
@@ -51,10 +54,13 @@
                 </div>
               </li>
               <li>
-                <a class="hover:underline" href="#">Company</a>
-                <!--Connect sub-menu-->
+                <a id="company-link" class="hover:underline menu-link" href="#"
+                  >Company</a
+                >
+                <!--Company sub-menu-->
                 <div
-                  class="hidden hover:block absolute sub-menu2 bg-white text-subMenu2"
+                  id="sub-menu2"
+                  class="hidden hover:block absolute bg-white text-subMenu"
                 >
                   <ul
                     class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
@@ -67,9 +73,12 @@
                 </div>
               </li>
               <li>
-                <a class="hover:underline" href="#">Connect</a>
+                <a id="connect-link" class="hover:underline menu-link" href="#"
+                  >Connect</a
+                >
                 <!--Connect sub-menu-->
                 <div
+                  id="sub-menu1"
                   class="hidden hover:block absolute sub-menu3 bg-white text-subMenu"
                 >
                   <ul
@@ -230,7 +239,9 @@
     <section>
       <div class="flex flex-col md:flex-row">
         <!--Images-->
-        <div class="bg-white flex flex-row md:flex-row md:w-1/2 pt-10 pr-20">
+        <div
+          class="bg-white flex flex-row md:flex-row md:w-1/2 pt-10 pr-20 pb-10"
+        >
           <!--Mobile image-->
           <img class="md:hidden" src="/images/illustration-laptop-mobile.svg" />
           <!--Desktop Image-->
