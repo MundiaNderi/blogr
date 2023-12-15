@@ -639,26 +639,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-bl-full {
-  border-bottom-left-radius: 9999px;
-}
-
-.rounded-bl-none {
-  border-bottom-left-radius: 0px;
-}
-
-.rounded-br-none {
-  border-bottom-right-radius: 0px;
-}
-
-.rounded-tl-none {
-  border-top-left-radius: 0px;
-}
-
-.rounded-tr-full {
-  border-top-right-radius: 9999px;
-}
-
 .border {
   border-width: 1px;
 }
@@ -984,6 +964,14 @@ video {
 
 .hero {
   border-radius: 0px 0px 0px 100px;
+}
+
+.art {
+  border-radius: 0px 100px;
+}
+
+.footer {
+  border-radius: 0px 100px 0px 0px;
 }
 
 .hover\:block:hover {
