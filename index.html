@@ -24,24 +24,92 @@
           </div>
           <!--Menu Items-->
           <div class="hidden md:flex space-x-6 text-white">
-            <a href="#">Product</a>
-            <a href="#">Company</a>
-            <a href="#">Connect</a>
+            <ul class="flex flex-row space-x-12">
+              <li class="text-decoration-none">
+                <a id="sub-menu" class="hover:underline" href="#">Product</a>
+                <!--Product sub-menu-->
+                <div
+                  class="hidden hover:block absolute sub-menu1 bg-white text-subMenu"
+                >
+                  <ul
+                    class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
+                  >
+                    <li class="p-1 hover:font-bold">
+                      <a href="#">Overview</a>
+                    </li>
+                    <li class="p-1 hover:font-bold"><a href="#">Pricing</a></li>
+                    <li class="p-1 hover:font-bold">
+                      <a href="#">Marketplace</a>
+                    </li>
+                    <li class="p-1 hover:font-bold">
+                      <a href="#">Features</a>
+                    </li>
+                    <li class="p-1 hover:font-bold">
+                      <a href="#">Integrations</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="hover:underline" href="#">Company</a>
+                <!--Connect sub-menu-->
+                <div
+                  class="hidden hover:block absolute sub-menu2 bg-white text-subMenu2"
+                >
+                  <ul
+                    class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
+                  >
+                    <li class="p-1 hover:font-bold"><a href="#">About</a></li>
+                    <li class="p-1 hover:font-bold"><a href="#">Team</a></li>
+                    <li class="p-1 hover:font-bold"><a href="#">Blog</a></li>
+                    <li class="p-1 hover:font-bold"><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="hover:underline" href="#">Connect</a>
+                <!--Connect sub-menu-->
+                <div
+                  class="hidden hover:block absolute sub-menu3 bg-white text-subMenu"
+                >
+                  <ul
+                    class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
+                  >
+                    <li class="p-1 hover:font-bold"><a href="#">Contact</a></li>
+                    <li class="p-1 hover:font-bold">
+                      <a href="#">Newsletter</a>
+                    </li>
+                    <li class="p-1 hover:font-bold">
+                      <a href="#">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
           <!--Button-->
-          <a class="text-white" href="#">Login</a>
+          <a class="hidden md:block text-white" href="#">Login</a>
           <a
             href="#"
-            class="hidden md:block p-3 px-6 pt-2 text-redCTA bg-white rounded-full baseline hover:bg-lightRed"
+            class="hidden md:block p-3 px-6 pt-2 text-redCTA bg-white rounded-full baseline hover:bg-hoverPink hover:text-white"
             >Sign Up</a
           >
+          <!--Hamburger icon-->
+          <button
+            id="menuBtn"
+            class="block md:hidden hamburger focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
         </div>
       </div>
     </nav>
 
     <!--Hero-->
     <div
-      class="flex flex-col items-center justify-center mx-auto pr-10 text-center pb-20 bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient"
+      class="flex flex-col items-center justify-center mx-auto pr-10 text-center pb-20 bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient rounded-tl-none rounded-tr-none rounded-br-none rounded-bl-full"
     >
       <h1 class="font-Overpass font-semibold text-5xl text-white mt-3 p-3">
         A modern publishing platform
@@ -132,7 +200,7 @@
     <!-- Architecture section-->
     <section>
       <div
-        class="flex flex-col md:flex-row bg-gradient-to-r justify-center from-darkPhone to-lightPhone"
+        class="flex flex-col md:flex-row bg-gradient-to-r justify-center from-darkPhone to-lightPhone rounded-tl-none rounded-tr-full rounded-br-none rounded-bl-full"
       >
         <div class="images">
           <img
@@ -214,39 +282,105 @@
 
     <!--Footer-->
     <footer
-      class="text-white bg-gradient-to-r from-veryDarkBlackBlue to-footerDark flex text-center md:text-left flex-col md:flex-row p-10"
+      class="text-white bg-footerDark flex text-center md:text-left flex-col md:flex-row p-10 pr-10 rounded-tl-none rounded-tr-full rounded-br-none rounded-bl-none"
     >
-      <img
-        class="justify-center md:justify-start md:w-1/4 pr-10"
-        src="/images/logo.svg"
-      />
+      <svg
+        class="mx-auto justify-center md:justify-start md:w-1/4 pr-10 border border-red-500"
+        xmlns="http://www.w3.org/2000/svg"
+        width="101"
+        height="48"
+        viewBox="0 0 101 40"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M25.2284 30.8026V0H31.009V30.8026H25.2284ZM0 30.8026V1.48645H10.6529C12.6348 1.48645 14.3484 1.79613 15.7935 2.41548C17.2387 3.03484 18.3535 3.91569 19.1381 5.05806C19.9226 6.20044 20.3148 7.54236 20.3148 9.08387C20.3148 10.4877 20.012 11.7196 19.4065 12.7794C18.8009 13.8391 17.9475 14.6718 16.8465 15.2774C18.3329 15.8555 19.489 16.7707 20.3148 18.0232C21.1406 19.2757 21.5535 20.7553 21.5535 22.4619C21.5535 24.1686 21.1131 25.6413 20.2323 26.88C19.3514 28.1187 18.1127 29.0821 16.5161 29.7703C14.9196 30.4585 13.034 30.8026 10.8594 30.8026H0ZM5.94581 6.56516V13.2955H9.99226C11.3411 13.2955 12.3802 13.0133 13.1097 12.449C13.8391 11.8847 14.2039 11.052 14.2039 9.95097C14.2039 8.84989 13.8391 8.01033 13.1097 7.43226C12.3802 6.85419 11.3411 6.56516 9.99226 6.56516H5.94581ZM10.5703 25.7239H5.94581V18.0439H10.5703C12.1118 18.0439 13.3024 18.3742 14.1419 19.0348C14.9815 19.6955 15.4013 20.6452 15.4013 21.8839C15.4013 23.1226 14.9815 24.0723 14.1419 24.7329C13.3024 25.3936 12.1118 25.7239 10.5703 25.7239ZM41.6206 30.5548C42.997 31.1329 44.4972 31.4219 46.1213 31.4219C47.7729 31.4219 49.2938 31.1329 50.6839 30.5548C52.074 29.9768 53.2852 29.1647 54.3174 28.1187C55.3497 27.0727 56.1548 25.8477 56.7329 24.4439C57.311 23.04 57.6 21.5123 57.6 19.8606C57.6 18.209 57.3179 16.6882 56.7535 15.2981C56.1892 13.9079 55.3979 12.6968 54.3794 11.6645C53.3609 10.6323 52.1634 9.8271 50.7871 9.24903C49.4107 8.67096 47.9105 8.38194 46.2865 8.38194C44.6348 8.38194 43.114 8.67096 41.7239 9.24903C40.3338 9.8271 39.1226 10.6391 38.0903 11.6852C37.0581 12.7312 36.2529 13.9492 35.6748 15.3394C35.0968 16.7295 34.8077 18.2503 34.8077 19.9019C34.8077 21.5536 35.0899 23.0813 35.6542 24.4852C36.2185 25.889 37.0099 27.1071 38.0284 28.1394C39.0469 29.1716 40.2443 29.9768 41.6206 30.5548ZM46.2039 26.2194C47.2499 26.2194 48.1858 25.9441 49.0116 25.3935C49.8374 24.843 50.4912 24.0929 50.9729 23.1432C51.4546 22.1935 51.6955 21.1131 51.6955 19.9019C51.6955 18.6907 51.4546 17.6103 50.9729 16.6606C50.4912 15.711 49.8374 14.9609 49.0116 14.4103C48.1858 13.8598 47.2499 13.5845 46.2039 13.5845C45.1578 13.5845 44.2219 13.8598 43.3961 14.4103C42.5703 14.9609 41.9166 15.711 41.4348 16.6606C40.9531 17.6103 40.7123 18.6907 40.7123 19.9019C40.7123 21.1131 40.9531 22.1935 41.4348 23.1432C41.9166 24.0929 42.5703 24.843 43.3961 25.3935C44.2219 25.9441 45.1578 26.2194 46.2039 26.2194ZM66.4981 29.3574C67.6955 29.908 68.9824 30.1832 70.3587 30.1832C71.7351 30.1832 72.9944 29.9011 74.1368 29.3368C75.2791 28.7725 76.2219 27.9948 76.9652 27.0039V28.7794C76.9652 29.9355 76.7449 30.9471 76.3045 31.8142C75.8641 32.6813 75.2516 33.3557 74.4671 33.8374C73.6826 34.3191 72.7536 34.56 71.68 34.56C70.689 34.56 69.8013 34.3329 69.0168 33.8787C68.2323 33.4245 67.5923 32.7983 67.0968 32L61.5639 33.3626C62.1144 34.5738 62.8714 35.6335 63.8348 36.5419C64.7983 37.4503 65.9269 38.1591 67.2206 38.6684C68.5144 39.1776 69.9733 39.4323 71.5974 39.4323C73.249 39.4323 74.7561 39.1639 76.1187 38.6271C77.4813 38.0903 78.6581 37.3265 79.649 36.3355C80.64 35.3445 81.4039 34.1609 81.9406 32.7845C82.4774 31.4082 82.7458 29.8804 82.7458 28.2013V9.00129H77.4194L77.2955 11.6852C76.5523 10.6116 75.6163 9.79269 74.4877 9.22839C73.3591 8.66408 72.0929 8.38194 70.689 8.38194C69.2576 8.38194 67.9295 8.66408 66.7045 9.22839C65.4796 9.79269 64.406 10.5703 63.4839 11.5613C62.5617 12.5523 61.846 13.7153 61.3368 15.0503C60.8275 16.3854 60.5729 17.8374 60.5729 19.4065C60.5729 20.9204 60.8206 22.3312 61.3161 23.6387C61.8116 24.9462 62.4998 26.0886 63.3806 27.0658C64.2615 28.043 65.3006 28.8069 66.4981 29.3574ZM71.7626 25.0632C72.7811 25.0632 73.6826 24.8086 74.4671 24.2994C75.2516 23.7901 75.8778 23.1019 76.3458 22.2348C76.8138 21.3677 77.0477 20.3837 77.0477 19.2826C77.0477 18.1815 76.8138 17.1974 76.3458 16.3303C75.8778 15.4632 75.2516 14.7751 74.4671 14.2658C73.6826 13.7566 72.7811 13.5019 71.7626 13.5019C70.7441 13.5019 69.8426 13.7566 69.0581 14.2658C68.2735 14.7751 67.6473 15.4632 67.1794 16.3303C66.7114 17.1974 66.4774 18.1815 66.4774 19.2826C66.4774 20.3837 66.7114 21.3677 67.1794 22.2348C67.6473 23.1019 68.2735 23.7901 69.0581 24.2994C69.8426 24.8086 70.7441 25.0632 71.7626 25.0632ZM92.6968 9.00129H87.3703V30.8026H93.151V20.1084C93.151 18.3191 93.5776 16.9359 94.431 15.9587C95.2843 14.9815 96.5092 14.4929 98.1058 14.4929C98.4361 14.4929 98.7596 14.5135 99.0761 14.5548C99.3927 14.5961 99.7024 14.6718 100.005 14.7819L100.625 9.08387C100.322 8.97376 99.9776 8.8843 99.5923 8.81548C99.2069 8.74667 98.8215 8.71226 98.4361 8.71226C97.1699 8.71226 96.0688 9.02193 95.1329 9.64129C94.197 10.2606 93.4538 11.1484 92.9032 12.3045L92.6968 9.00129Z"
+          fill="white"
+        />
+      </svg>
       <div class="flex flex-col md:flex-col md:w-1/4">
         <h3
           class="text-white flex-col flex font-overpass text-xs font-bold leading-normal tracking-wide mb-4"
         >
           Product
         </h3>
-        <a class="text-xs font-bold leading-normal tracking-wide" href="#"
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
           >Overview</a
         >
-        <a href="#">Pricing</a>
-        <a href="#">Marketplace</a>
-        <a href="#">Features</a>
-        <a href="#">Integrations</a>
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >Pricing</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >Marketplace</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >Features</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2 pb-4"
+          href="#"
+          >Integrations</a
+        >
       </div>
       <div class="help flex flex-col md:flex-col md:w-1/4">
-        <h3 class="pb-7">Company</h3>
-        <a href="#">About</a>
-        <a href="#">Team</a>
-        <a href="#">Blog</a>
-        <a href="#">Careers</a>
+        <h3
+          class="text-white flex-col flex font-overpass text-xs font-bold leading-normal tracking-wide mb-4"
+        >
+          Company
+        </h3>
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >About</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >Team</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >Blog</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2 pb-4"
+          href="#"
+          >Careers</a
+        >
       </div>
       <div class="help flex flex-col md:flex-col md:w-1/4">
-        <h3>Connect</h3>
-        <a href="#">Contact</a>
-        <a href="#">Newsletter</a>
-        <a href="#">LinkedIn</a>
+        <h3
+          class="text-white flex-col flex font-overpass text-xs font-bold leading-normal tracking-wide mb-4"
+        >
+          Connect
+        </h3>
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >Contact</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >Newsletter</a
+        >
+        <a
+          class="text-xs font-normal leading-normal tracking-wide mb-2"
+          href="#"
+          >LinkedIn</a
+        >
       </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
