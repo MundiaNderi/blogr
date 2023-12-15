@@ -15,104 +15,125 @@
   <body>
     <nav class="bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient">
       <!--Navbar-->
-      <div class="mx-auto p-6">
-        <!--Flex container-->
-        <div class="flex items-center justify-between">
-          <!--Logo-->
-          <div class="pt-2">
-            <img src="/images/logo.svg" alt="" />
-          </div>
-          <!--Menu Items-->
-          <div id="menu" class="hidden md:flex space-x-10 text-white">
-            <ul class="flex flex-row space-x-12">
-              <li class="text-decoration-none">
-                <a id="product-link" class="hover:underline menu-link" href="#"
-                  >Product</a
+      <!--Flex container-->
+      <div
+        class="container flex items-center justify-between border border-green-500 px-6 md:px-40 pt-14 md:pt-16"
+      >
+        <!--Logo-->
+        <div class="">
+          <img src="/images/logo.svg" alt="" />
+        </div>
+        <!--Menu Items-->
+        <div id="menu" class="hidden md:flex space-x-10 text-white">
+          <ul class="flex flex-row space-x-12">
+            <li class="text-decoration-none">
+              <a
+                id="product-link"
+                class="hover:underline menu-link flex items-center"
+                href="#"
+                >Product
+                <span class="pl-2">
+                  <img class="w-4 h-2" src="/images/arrow.svg" />
+                </span>
+              </a>
+              <!--Product sub-menu-->
+              <div
+                id="sub-menu"
+                class="hidden hover:block absolute sub-menu1 bg-white text-subMenu"
+              >
+                <ul
+                  class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
                 >
-                <!--Product sub-menu-->
-                <div
-                  id="sub-menu"
-                  class="hidden hover:block absolute sub-menu1 bg-white text-subMenu"
+                  <li class="p-1 hover:font-bold">
+                    <a href="#">Overview</a>
+                  </li>
+                  <li class="p-1 hover:font-bold"><a href="#">Pricing</a></li>
+                  <li class="p-1 hover:font-bold">
+                    <a href="#">Marketplace</a>
+                  </li>
+                  <li class="p-1 hover:font-bold">
+                    <a href="#">Features</a>
+                  </li>
+                  <li class="p-1 hover:font-bold">
+                    <a href="#">Integrations</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                id="company-link"
+                class="hover:underline menu-link flex items-center"
+                href="#"
+                >Company
+                <span class="pl-2">
+                  <img class="w-4 h-2" src="/images/arrow.svg" />
+                </span>
+              </a>
+              <!--Company sub-menu-->
+              <div
+                id="sub-menu2"
+                class="hidden hover:block absolute bg-white text-subMenu"
+              >
+                <ul
+                  class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
                 >
-                  <ul
-                    class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
-                  >
-                    <li class="p-1 hover:font-bold">
-                      <a href="#">Overview</a>
-                    </li>
-                    <li class="p-1 hover:font-bold"><a href="#">Pricing</a></li>
-                    <li class="p-1 hover:font-bold">
-                      <a href="#">Marketplace</a>
-                    </li>
-                    <li class="p-1 hover:font-bold">
-                      <a href="#">Features</a>
-                    </li>
-                    <li class="p-1 hover:font-bold">
-                      <a href="#">Integrations</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a id="company-link" class="hover:underline menu-link" href="#"
-                  >Company</a
+                  <li class="p-1 hover:font-bold"><a href="#">About</a></li>
+                  <li class="p-1 hover:font-bold"><a href="#">Team</a></li>
+                  <li class="p-1 hover:font-bold"><a href="#">Blog</a></li>
+                  <li class="p-1 hover:font-bold"><a href="#">Careers</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                id="connect-link"
+                class="hover:underline menu-link flex items-center"
+                href="#"
+                >Connect
+                <span class="pl-2">
+                  <img class="w-4 h-2" src="/images/arrow.svg" />
+                </span>
+              </a>
+              <!--Connect sub-menu-->
+              <div
+                id="sub-menu1"
+                class="hidden hover:block absolute sub-menu3 bg-white text-subMenu"
+              >
+                <ul
+                  class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
                 >
-                <!--Company sub-menu-->
-                <div
-                  id="sub-menu2"
-                  class="hidden hover:block absolute bg-white text-subMenu"
-                >
-                  <ul
-                    class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
-                  >
-                    <li class="p-1 hover:font-bold"><a href="#">About</a></li>
-                    <li class="p-1 hover:font-bold"><a href="#">Team</a></li>
-                    <li class="p-1 hover:font-bold"><a href="#">Blog</a></li>
-                    <li class="p-1 hover:font-bold"><a href="#">Careers</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a id="connect-link" class="hover:underline menu-link" href="#"
-                  >Connect</a
-                >
-                <!--Connect sub-menu-->
-                <div
-                  id="sub-menu1"
-                  class="hidden hover:block absolute sub-menu3 bg-white text-subMenu"
-                >
-                  <ul
-                    class="pt-3 p-5 px-7 text-darkPhone font-ubuntu text-lg font-normal leading-10 cursor-pointer"
-                  >
-                    <li class="p-1 hover:font-bold"><a href="#">Contact</a></li>
-                    <li class="p-1 hover:font-bold">
-                      <a href="#">Newsletter</a>
-                    </li>
-                    <li class="p-1 hover:font-bold">
-                      <a href="#">LinkedIn</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!--Button-->
+                  <li class="p-1 hover:font-bold"><a href="#">Contact</a></li>
+                  <li class="p-1 hover:font-bold">
+                    <a href="#">Newsletter</a>
+                  </li>
+                  <li class="p-1 hover:font-bold">
+                    <a href="#">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--Button-->
+        <div class="flex space-x-5 items-center">
           <a class="hidden md:block text-white" href="#">Login</a>
           <a
             href="#"
             class="hidden md:block p-3 px-6 pt-2 text-redCTA bg-white rounded-full baseline hover:bg-hoverPink hover:text-white"
             >Sign Up</a
           >
-          <!--Hamburger icon-->
-          <button
-            id="menuBtn"
-            class="block md:hidden hamburger focus:outline-none"
-          >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
         </div>
+
+        <!--Hamburger icon-->
+        <button
+          id="menuBtn"
+          class="block md:hidden hamburger focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
     </nav>
 

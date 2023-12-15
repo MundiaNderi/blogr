@@ -28,3 +28,13 @@ companyLink.addEventListener("click", function(event) {
     event.preventDefault();
     subMenu2.classList.toggle("hidden")
 })
+
+// Toggle the hamburger icon
+const btn = document.getElementById('menuBtn')
+const nav = document.getElementById('menu')
+
+btn.addEventListener('click', () => {
+    btn.classList.toggle('open')
+    nav.classList.toggle('flex')
+    nav.classList.toggle('hidden')
+})
