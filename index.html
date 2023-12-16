@@ -17,14 +17,14 @@
       <!--Navbar-->
       <!--Flex container-->
       <div
-        class="mx-auto flex items-center justify-between border border-green-500 px-6 pt-14 md:pt-16"
+        class="mx-auto flex items-center border border-green-500 px-6 md:px-44 pt-14 md:pt-16"
       >
         <!--Logo-->
-        <div class="">
+        <div class="pr-52 md:pr-16">
           <img src="/images/logo.svg" alt="" />
         </div>
         <!--Menu Items-->
-        <div id="menu" class="hidden md:flex space-x-10 text-white">
+        <div class="hidden md:flex space-x-10 text-white md:mr-96">
           <ul class="flex flex-row space-x-12">
             <li class="text-decoration-none">
               <a
@@ -134,6 +134,53 @@
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom"></span>
         </button>
+
+        <!--Mobile Menu-->
+        <div
+          id="menu"
+          class="bg-white text-headingBlue hidden absolute flex-col mt-80 px-32 mr- justify-center items-center cursor-pointer pb-3"
+        >
+          <!--Product-->
+          <div class="text-decoration-none list-none">
+            <a
+              id="mobile-prod"
+              class="items-center flex mt-6 pb-6 relative"
+              href="#"
+              >Product
+              <span class="pl-2">
+                <img class="w-4 h-2" src="/images/Red Arrow.svg" />
+              </span>
+            </a>
+          </div>
+          <!--Company-->
+          <di class="text-decoration-none list-none pb-6">
+            <a class="flex items-center" href="#"
+              >Company
+              <span class="pl-2">
+                <img class="w-4 h-2" src="/images/Red Arrow.svg" />
+              </span>
+            </a>
+          </di>
+
+          <!--Connect-->
+          <div class="text-decoration-none list-none">
+            <a class="flex items-center" href="#"
+              >Connect
+              <span class="pl-2">
+                <img class="w-4 h-2" src="/images/Red Arrow.svg" />
+              </span>
+            </a>
+          </div>
+          <hr class="text-hrWhite my-6 w-full mx-6" />
+          <a class="text-headingBlue mb-6" href="#">Login</a>
+          <div class="mx-auto">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 mt-6 text-white bg-redCTA rounded-full baseline hover:bg-white hover:text-redCTA"
+              >SignUp</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
 
