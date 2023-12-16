@@ -16,9 +16,7 @@
     <nav class="bg-gradient-to-r from-veryLightRedGradient to-lightRedGradient">
       <!--Navbar-->
       <!--Flex container-->
-      <div
-        class="mx-auto flex items-center border border-green-500 px-6 md:px-44 pt-14 md:pt-16"
-      >
+      <div class="mx-auto flex items-center px-6 md:px-44 pt-14 md:pt-16">
         <!--Logo-->
         <div class="pr-52 md:pr-16">
           <img src="/images/logo.svg" alt="" />
@@ -138,14 +136,11 @@
         <!--Mobile Menu-->
         <div
           id="menu"
-          class="bg-white text-headingBlue hidden absolute flex-col mt-80 px-32 mr- justify-center items-center cursor-pointer pb-3"
+          class="bg-white text-headingBlue hidden absolute flex-col mt-80 px-28 justify-center items-center cursor-pointer pb-3"
         >
           <!--Product-->
           <div class="text-decoration-none list-none">
-            <a
-              id="mobile-prod"
-              class="items-center flex mt-6 pb-6 relative"
-              href="#"
+            <a id="mobile-prod" class="items-center flex mt-6 pb-6" href="#"
               >Product
               <span class="pl-2">
                 <img class="w-4 h-2" src="/images/Red Arrow.svg" />
@@ -153,14 +148,14 @@
             </a>
           </div>
           <!--Company-->
-          <di class="text-decoration-none list-none pb-6">
+          <div class="text-decoration-none list-none pb-6">
             <a class="flex items-center" href="#"
               >Company
               <span class="pl-2">
                 <img class="w-4 h-2" src="/images/Red Arrow.svg" />
               </span>
             </a>
-          </di>
+          </div>
 
           <!--Connect-->
           <div class="text-decoration-none list-none">
@@ -172,7 +167,9 @@
             </a>
           </div>
           <hr class="text-hrWhite my-6 w-full mx-6" />
-          <a class="text-headingBlue mb-6" href="#">Login</a>
+          <div class="login mb-6">
+            <a class="text-headingBlue mb-6" href="#">Login</a>
+          </div>
           <div class="mx-auto">
             <a
               href="#"
@@ -230,11 +227,13 @@
         class="md:w-1/2 md:mt-10 pb-20 text-center md:text-left pt-16 md:ml-20"
       >
         <!--Desktop H1-->
-        <h1
-          class="hidden md:block font-semibold font-overpass text-headingBlue md:ml-10 text-center text-3xl md:text-4xl tracking-wide leading-normal p-2 md:pl-10"
-        >
-          Designed for the future
-        </h1>
+        <div class="heading justify-center text-center">
+          <h1
+            class="hidden md:block font-semibold font-overpass text-headingBlue md:ml-10 text-center text-3xl md:text-4xl tracking-wide leading-normal p-2 md:pl-10"
+          >
+            Designed for the future
+          </h1>
+        </div>
 
         <!--Paragraph 1-->
         <div class="">
@@ -348,7 +347,7 @@
               Powerful tooling
             </h2>
             <p
-              class="pt-1 px-5 text-bodyGray font-light text-base leading-relaxed tracking-wide"
+              class="pt-1 px-5 text-bodyGray font-light text-base leading-relaxed tracking-wide mb-24"
             >
               Batteries included. We built a simple and straightforward CLI tool
               that makes customization and deployment a breeze, but capable of
@@ -364,7 +363,7 @@
       class="text-white bg-footerDark flex text-center md:text-left flex-col md:flex-row p-10 pr-10 footer"
     >
       <svg
-        class="mx-auto justify-center md:justify-start md:w-1/4 pr-10 border border-red-500"
+        class="md:w-1/4 mx-auto"
         xmlns="http://www.w3.org/2000/svg"
         width="101"
         height="48"
@@ -384,14 +383,10 @@
         >
           Product
         </h3>
-        <a
-          class="text-xs font-normal leading-normal tracking-wide mb-2"
-          href="#"
+        <a class="text-xs font-normal leading-11 tracking-wide mb-2" href="#"
           >Overview</a
         >
-        <a
-          class="text-xs font-normal leading-normal tracking-wide mb-2"
-          href="#"
+        <a class="text-xs font-normal leading-11 tracking-wide mb-2" href="#"
           >Pricing</a
         >
         <a
